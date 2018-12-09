@@ -16,7 +16,7 @@ exports.config = {
         chai.use(chaiAsExpected);
         var expectChai = chai.expect;
         global.expect = expectChai;
-        baba
+        baba  test
     }, */
     onPrepare: function(){
         browser.driver.manage().window().maximize();
