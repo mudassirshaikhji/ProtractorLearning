@@ -16,6 +16,7 @@ exports.config = {
         chai.use(chaiAsExpected);
         var expectChai = chai.expect;
         global.expect = expectChai;
+        //adding a new comment
     }, */
     onPrepare: function(){
         browser.driver.manage().window().maximize();
