@@ -16,11 +16,7 @@ exports.config = {
         chai.use(chaiAsExpected);
         var expectChai = chai.expect;
         global.expect = expectChai;
-<<<<<<< HEAD
-        //adding a new comment
-=======
         baba  test
->>>>>>> 4777e4035a224f5fbc3f2958e72d9a90e97ff1c8
     }, */
     onPrepare: function(){
         browser.driver.manage().window().maximize();
