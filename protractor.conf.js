@@ -8,7 +8,8 @@ exports.config = {
         browserName:'chrome'
     },
     cucumberOpts: {
-        require: ['./features/step_definitions/*.js']
+        require: ['./features/step_definitions/*.js'],
+        format: 'json:.tmp/results.json'
     },
     /*onPrepare: function(){
         var chai = require(chai);
@@ -20,5 +21,12 @@ exports.config = {
     }, */
     onPrepare: function(){
         browser.driver.manage().window().maximize();
-    }
+    },
+    // Here the magic happens
+    plugins: [{
+        package: 'protractor-multiple-cucumber-html-reporter-plugin',
+        options:{
+            // read the options part
+        }
+    }]
 }
