@@ -22,7 +22,7 @@ exports.config = {
     onPrepare: function(){
         browser.driver.manage().window().maximize();
     },
-    // Here the magic happens
+    // Here the magic happens adding this comment here
     plugins: [{
         package: require.resolve('protractor-multiple-cucumber-html-reporter-plugin')   ,
         options:{
