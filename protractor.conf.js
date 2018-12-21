@@ -24,9 +24,10 @@ exports.config = {
     },
     // Here the magic happens
     plugins: [{
-        package: 'protractor-multiple-cucumber-html-reporter-plugin',
+        package: require.resolve('protractor-multiple-cucumber-html-reporter-plugin')   ,
         options:{
-            // read the options part
+            automaticallyGenerateReport: true,
+            removeExistingJsonReportFile: true
         }
     }]
 }
